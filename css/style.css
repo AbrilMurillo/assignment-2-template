@@ -1,0 +1,41 @@
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+figure{
+    margin: 0;
+}
+#thumbnail-list{
+    padding-bottom: 15px;
+}
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+    text-align: center;
+    background-color: rgb(36, 36, 36);
+    color: rgb(254, 254, 254);
+    margin: 0;
+}
+#image-title{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#thumbnail-list img.inactive {
+    filter: grayscale(100%);
+}
+li :not(.inactive){
+    border: 8px solid rgb(36, 36, 36);
+}
